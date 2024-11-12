@@ -1,6 +1,3 @@
-
-<header><h2>Atualizar</h2></header>
-
 <?php
 
 $idalterar = mysqli_real_escape_string($conexao,$_POST["id"]);
@@ -15,5 +12,10 @@ $sql = "UPDATE cliente SET nome = '{$nomealterar}', telefone = '{$telefonealtera
 
  mysqli_query($conexao,$sql) or die ("Erro ao executar cadastro." . mysqli_error($conexao));
 
-    echo "A Reserva foi Alterada com Sucesso! ";
+    echo "<h2>A Reserva foi Alterada com Sucesso! </h2>";
 ?>
+  <header class="d-flex justify-content-end align-items-center p-3">
+      <div>
+        <a class="btn btn-danger mb-2" href="index.php?escolha=agenda"><i class="bi bi-arrow-return-left"></i> Voltar</a>
+      </div>
+  </header>

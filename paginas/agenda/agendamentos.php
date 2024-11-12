@@ -76,10 +76,11 @@ $result = mysqli_query($conexao,$sql);
             </tr>
         </thead>
         <tbody>
-            <?php
+            <?php // paginaçao da lista de agendamentos,
+            // quantidade de itens por paginas, ternaria(if reduzido) para criar paginaçao apos 10 elementos.
             $quant =10;
             $pagina = (isset($_GET["pagina"]))?(int)$_GET['pagina']:1;
-            $inicio = ($quant * $pagina) - $quant;
+            $inicio = ($quant * $pagina) - $quant;// variavel da primeira pagina
 
             
             //trecho de busca no banco, formataçao e ordenamento na exibiçao//
