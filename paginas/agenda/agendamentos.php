@@ -160,4 +160,3 @@ $result = mysqli_query($conexao,$sql);
     echo "<li class='page-item'><span class='page-link'>Total de Agendamentos: " . $numresult . "</span></li>";//mostra a quantidade total de agendamentos
     ?>
     </ul>
-   
