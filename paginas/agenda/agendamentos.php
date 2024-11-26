@@ -19,10 +19,11 @@ include("protect.php");
             header("Location: login.php");
             exit();
         }
-    }else{
-
-        header("Location: login.php");
-            exit();
+    }if($_SESSION["nivel"]!=1){
+        
+        die("<h2>Você não pode acessar esta Pagina porque não tem Permissão.</h2>
+    <h3><p><a href=\"index.php?escolha=agendauser\"><i class=\"bi bi-arrow-return-left\"></i> Voltar</a></p></h3>");
+        exit();          
     }
 
     //variavel que mantem o texto digitado na pesquisa em exibiçao//
