@@ -24,7 +24,7 @@ O servidor envia a página gerada dinamicamente para o navegador do usuário.
 
 
 
-#   Exibe os Agendamentos.
+#   Exibe a tela para realizar o Agendamento.
 ![Página de Agendamentos.](prints/agendamento.png)
 
 
